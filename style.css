@@ -1,0 +1,80 @@
+body {
+	background: #fafafa;
+}
+
+.dino {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	background-image: url(dino.png);
+}
+
+.cactus {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	bottom: 0;
+	background-image: url(cactus.png);
+}
+
+.game-over {
+	text-align: center;
+	color: black;
+	margin-top: 200px;
+	font-size: 3rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+	margin-top: 100px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 2.5rem;
+}
+
+.score {
+	color: black;
+	font-size: 2rem;
+	font-family: 'Lucida Sans', sans-serif;
+}
+
+.btn {
+	text-align: center;
+	color: black;
+	width: 200px;
+	padding: 15px 20px;
+	border: 2px solid black;
+	border-radius: 6px;
+	background-color: #fcc302;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.inicio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes slideright {
+	from {
+		background-position: 70000%;
+	}
+	to {
+		background-position: 0%;
+	}
+}
+
+.background {
+	position: absolute;
+	bottom: 0px;
+	background-image: url('background.png');
+	background-repeat: repeat-x;
+	animation: slideright 600s infinite linear;
+	-webkit-animation: slideright 600s infinite linear;
+	width: 100%;
+	height: 200px;
+}
